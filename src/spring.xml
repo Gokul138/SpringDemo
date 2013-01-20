@@ -3,8 +3,8 @@
 
 <beans> 
 	
-	<bean id="triangle" class="org.lengor.learn.Triangle">
-		<property name="pointA" ref="zeroPoint"/>
+	<bean id="triangle" class="org.lengor.learn.Triangle" name="triangle-name">
+		<property name="pointA" <idref="zeroPoint"></property>
 		
 		<property name="pointB">
 			<bean class="org.lengor.learn.Point">
@@ -26,5 +26,5 @@
 		<property name="x" value="0"/>
 		<property name="y" value="0"/>
 	</bean>
-		
+	<alias name="triangle" alias="triangle-alias"/>
 </beans>
